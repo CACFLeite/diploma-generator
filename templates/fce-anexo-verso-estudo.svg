@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1122" height="793" viewBox="0 0 1122 793">
+<!-- Verso de estudo baseado no Anexo II FCE 02/2026; sem registro institucional -->
+<rect width="1122" height="793" fill="#fff"/>
+<rect x="80" y="78" width="962" height="625" fill="#fff" stroke="#222" stroke-width="1.4"/>
+<text x="561" y="54" font-family="Arial,sans-serif" font-size="19" font-weight="bold" text-anchor="middle">MODELO DE DIPLOMA - VERSO (ESTUDO)</text>
+<g font-family="Arial,sans-serif" fill="#111">
+<text x="561" y="117" text-anchor="middle" font-weight="bold" font-size="22">FACULDADE CAMPOS ELÍSEOS – FCE</text>
+<text x="561" y="146" text-anchor="middle" font-size="19">Mantenedora: {{ mantenedora | default("[RAZÃO SOCIAL]",true) }}</text>
+<text x="561" y="173" text-anchor="middle" font-size="19">CNPJ: {{ cnpj | default("[NÃO INFORMADO]",true) }}</text>
+<text x="561" y="212" text-anchor="middle" font-size="18">Credenciamento: {{ credenciamento | default("informação institucional não preenchida",true) }}</text>
+<text x="561" y="264" text-anchor="middle" font-size="20">Curso: Segunda Licenciatura em {{ curso | default("[CURSO]",true) }}</text>
+<text x="561" y="294" text-anchor="middle" font-size="18">Reconhecimento: {{ reconhecimento | default("informação institucional não preenchida",true) }}</text>
+<text x="94" y="351" font-size="19">Carga Horária Total: 1.600 (mil e seiscentas) horas.</text>
+<text x="94" y="380" font-size="19">Integralizada mediante:</text>
+<text x="94" y="407" font-size="18">a) componentes curriculares específicos;</text>
+<text x="94" y="434" font-size="18">b) estágio curricular supervisionado;</text>
+<text x="94" y="461" font-size="18">c) aproveitamento de estudos compatíveis com formação anterior,</text>
+<text x="117" y="488" font-size="18">conforme Projeto Pedagógico do Curso (PPC).</text>
+<rect x="94" y="531" width="932" height="46" fill="#f1f1f1"/>
+<text x="561" y="560" text-anchor="middle" font-size="17" font-weight="bold">REGISTRO NÃO SIMULADO • DEPENDE DA IES RESPONSÁVEL</text>
+<line x1="80" y1="650" x2="537" y2="650" stroke="#222"/>
+<line x1="563" y1="650" x2="1042" y2="650" stroke="#222"/>
+<text x="309" y="674" font-size="17" text-anchor="middle">Área reservada: Registro</text>
+<text x="802" y="674" font-size="17" text-anchor="middle">Área reservada: Cargo / Função</text>
+</g>
+<rect x="80" y="713" width="962" height="45" fill="#ededed"/>
+<text x="561" y="742" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle" font-size="16">DEMONSTRAÇÃO TÉCNICA • SEM VALIDADE INSTITUCIONAL</text>
+</svg>
