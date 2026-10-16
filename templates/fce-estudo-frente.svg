@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1122" height="793" viewBox="0 0 1122 793">
+<!-- Protótipo técnico: NÃO corresponde à arte-final institucional -->
+<rect width="1122" height="793" fill="#fffefa"/>
+<rect x="24" y="24" width="1074" height="745" fill="none" stroke="#4d5360" stroke-width="2"/>
+<rect x="34" y="34" width="1054" height="725" fill="none" stroke="#a8acb3"/>
+<rect x="44" y="44" width="1034" height="36" fill="#eceff2"/>
+<text x="561" y="69" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#293847">PROTÓTIPO VISUAL DE ESTUDO • NÃO É DIPLOMA EMITIDO</text>
+<text x="561" y="122" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2b3640">REPÚBLICA FEDERATIVA DO BRASIL</text>
+<text x="561" y="145" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#2b3640">MINISTÉRIO DA EDUCAÇÃO</text>
+<text x="561" y="178" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="bold" fill="#1f2937">FACULDADE CAMPOS ELÍSEOS – FCE</text>
+<text x="561" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-style="italic" fill="#444">Estudo de composição: segunda licenciatura (Anexo II, Resolução nº 02/2026)</text>
+<line x1="170" y1="231" x2="952" y2="231" stroke="#59616b"/>
+<text x="561" y="274" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="bold">DIPLOMA</text>
+<text x="94" y="322" font-family="Georgia,serif" font-size="18">A Direção da Faculdade Campos Elíseos, no exercício de suas atribuições,</text>
+<text x="94" y="351" font-family="Georgia,serif" font-size="18">concede, para fins de demonstração do sistema, a titulação indicada a:</text>
+{% set tamanho_nome = 23 if nome|length > 38 else (28 if nome|length > 27 else 34) %}
+<text x="561" y="413" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="{{ tamanho_nome }}" fill="#1b334c">{{ nome | default("NOME DE EXEMPLO", true) }}</text>
+<line x1="140" x2="982" y1="425" y2="425" stroke="#a8acb3"/>
+<text x="561" y="464" text-anchor="middle" font-family="Georgia,serif" font-size="21">{{ curso | default("Segunda Licenciatura – curso de demonstração", true) }}</text>
+<text x="94" y="515" font-family="Georgia,serif" font-size="17">Conclusão: {{ conclusao | default("não informada", true) }}</text>
+<text x="580" y="515" font-family="Georgia,serif" font-size="17">Colação de grau: {{ colacao | default("não informada", true) }}</text>
+<text x="94" y="562" font-family="Georgia,serif" font-size="17">Local: {{ local | default("São Paulo", true) }}</text>
+<text x="580" y="562" font-family="Georgia,serif" font-size="17">Data de referência: {{ data | default("não informada", true) }}</text>
+<rect x="110" y="610" width="902" height="68" fill="#f1f3f5" stroke="#c4c8cf"/>
+<text x="561" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="16">ÁREA DE ASSINATURAS NÃO REPRODUZIDA</text>
+<text x="561" y="662" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">Somente a instituição pode aprovar a versão oficial e seus elementos de autenticação.</text>
+<text x="561" y="733" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#59616b">ESTUDO DE LAYOUT • Modelo didático, não autorizado para emissão institucional</text>
+</svg>
