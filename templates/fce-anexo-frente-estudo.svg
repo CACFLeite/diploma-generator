@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1122" height="793" viewBox="0 0 1122 793">
+<!-- Estudo baseado no Anexo II (pagina 15) da Resolucao FCE 02/2026. Sem assinaturas ou validacao -->
+<rect width="1122" height="793" fill="#ffffff"/>
+<rect x="80" y="78" width="962" height="625" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="561" y="54" font-family="Arial,sans-serif" text-anchor="middle" font-size="19" font-weight="bold">MODELO DE DIPLOMA - FRENTE (ESTUDO)</text>
+<g fill="#111" font-family="Arial,sans-serif">
+<text x="561" y="132" text-anchor="middle" font-size="22" font-weight="bold">REPÚBLICA FEDERATIVA DO BRASIL</text>
+<text x="561" y="158" text-anchor="middle" font-size="22" font-weight="bold">MINISTÉRIO DA EDUCAÇÃO</text>
+<text x="561" y="189" text-anchor="middle" font-size="22" font-weight="bold">FACULDADE CAMPOS ELÍSEOS – FCE</text>
+<text x="94" y="241" font-size="19">A Direção da Faculdade Campos Elíseos – FCE, no uso de suas atribuições legais</text>
+<text x="94" y="268" font-size="19">e tendo concluído o curso de Segunda Licenciatura em</text>
+<text x="94" y="295" font-size="19">{{ curso | default("[CURSO NÃO INFORMADO]", true) }}, conforme os dados acadêmicos autorizados,</text>
+<text x="94" y="322" font-size="19">confere, para fins de estudo gráfico, o grau de LICENCIADO(A) a:</text>
+{% set tam = 19 if nome|length > 44 else (22 if nome|length > 30 else 25) %}
+<text x="561" y="378" text-anchor="middle" font-size="{{ tam }}" font-weight="bold">{{ nome | default("[NOME DO(A) DIPLOMADO(A)]", true) }}</text>
+<text x="94" y="425" font-size="19">Nacionalidade: {{ nacionalidade | default("não informada",true) }}. Naturalidade: {{ naturalidade | default("não informada",true) }}.</text>
+<text x="94" y="451" font-size="19">Nascimento: {{ nascimento | default("não informado",true) }}. Identidade: {{ identidade | default("não informada",true) }}.</text>
+<text x="94" y="496" font-size="18">O presente arquivo é exclusivamente um estudo de preenchimento automático.</text>
+<text x="94" y="523" font-size="18">Não é documento acadêmico emitido nem certificado de conclusão.</text>
+<text x="1007" y="587" font-size="19" text-anchor="end">{{ local | default("São Paulo",true) }}, {{ data | default("data não informada",true) }}</text>
+<line x1="80" y1="650" x2="537" y2="650" stroke="#222"/>
+<line x1="563" y1="650" x2="1042" y2="650" stroke="#222"/>
+<text x="309" y="674" text-anchor="middle" font-size="17">Área reservada: Direção Acadêmica</text>
+<text x="802" y="674" text-anchor="middle" font-size="17">Área reservada: Secretaria Acadêmica</text>
+</g>
+<rect x="80" y="713" width="962" height="45" fill="#ededed"/>
+<text x="561" y="742" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle" font-size="16">DEMONSTRAÇÃO TÉCNICA • SEM VALIDADE INSTITUCIONAL</text>
+</svg>
